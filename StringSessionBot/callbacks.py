@@ -45,8 +45,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "generate":
         await callback_query.message.reply(
-            "📟اذا كنـت تـريد تنـصيـب
-◍ مـيوزك فـأختـار كــود بـايـروجـرام \n
+            "📟اذا كنـت تـريد تنـصيـب\n◍ مـيوزك فـأختـار كــود بـايـروجـرام \n
 ◍ التليثون فـأخـتار كــود تيرمكـس \n
 
 ◍ يتضمن ايضا البوت 
