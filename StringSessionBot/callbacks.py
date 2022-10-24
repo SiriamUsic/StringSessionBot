@@ -45,12 +45,12 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "generate":
         await callback_query.message.reply(
-            "📟اذا كنـت تـريد تنـصيـب
-◍ مـيوزك فـأختـار كــود بـايـروجـرام
-◍ التليثون فـأخـتار كــود تيرمكـس
+            "📟اذا كنـت تـريد تنـصيـب"
+◍ مـيوزك فـأختـار كــود بـايـروجـرام \n
+◍ التليثون فـأخـتار كــود تيرمكـس \n
 
 ◍ يتضمن ايضا البوت 
--: جلسه ميوزك قديمه وحديث. يوجد جلسات للبوتات بلاسفل By: @wjj_u",
+\n -: جلسه ميوزك قديمه وحديث. يوجد جلسات للبوتات بلاسفل By: @wjj_u",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
