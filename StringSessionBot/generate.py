@@ -24,17 +24,12 @@ from telethon.errors import (
 
 @Client.on_message(filters.private & ~filters.forwarded & filters.command("generate"))
 async def main(_, msg):
-    await msg.reply(
-        "📟اذا كنـت تـريد تنـصيـب\n
-◍ مـيوزك فـأختـار كــود بـايـروجـرام
-◍ التليثون فـأخـتار كــود تيرمكـس
-◍ يتضمن ايضا البوت 
--: جلسه ميوزك قديمه وحديث. يوجد جلسات للبوتات بلاسفل By: @wjj_u",
+    await msg.reply("📟اذا كنـت تـريد تنـصيـب\n◍ مـيوزك فـأختـار كــود بـايـروجـرام\n◍ التليثون فـأخـتار كــود تيرمكـس\n◍ يتضمن ايضا البوت \n-: جلسه ميوزك قديمه وحديث. يوجد جلسات للبوتات بلاسفل\n By: @Salah_officiall",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🧑‍💻 بايروجرام", callback_data="pyrogram"),
-                    InlineKeyboardButton("تليثون 🧑‍💻", callback_data="telethon"),
+                    InlineKeyboardButton("بايروجرام", callback_data="pyrogram"),
+                    InlineKeyboardButton("تليثون", callback_data="telethon"),
                 ]
             ]
         ),
@@ -49,7 +44,7 @@ async def generate_session(bot, msg, telethon=False):
     )
     user_id = msg.chat.id
     api_id_msg = await bot.ask(
-        user_id, "🎮أولا قم بأرسال الـ API_ID", filters=filters.text
+        user_id, "أولا قم بأرسال الـ API_ID", filters=filters.text
     )
     if await cancelled(api_id_msg):
         return
@@ -63,14 +58,14 @@ async def generate_session(bot, msg, telethon=False):
         )
         return
     api_hash_msg = await bot.ask(
-        user_id, "🎮حسنـا قم بأرسال الـ API_HASH", filters=filters.text
+        user_id, "حسنـا قم بأرسال الـ API_HASH", filters=filters.text
     )
     if await cancelled(api_id_msg):
         return
     api_hash = api_hash_msg.text
     phone_number_msg = await bot.ask(
         user_id,
-        "✔️الان ارسل رقمك مع رمز دولتك , مثال :+201287585064'`",
+        "✔️الان ارسل رقمك مع رمز دولتك , مثال :+201016805193`",
         filters=filters.text,
     )
     if await cancelled(api_id_msg):
@@ -102,7 +97,7 @@ async def generate_session(bot, msg, telethon=False):
     try:
         phone_code_msg = await bot.ask(
             user_id,
-            "🔍من فضلك افحص حسابك بالتليجرام وتفقد الكود من حساب اشعارات التليجرام. إذا كان هناك تحقق بخطوتين( المرور ) ، أرسل كلمة المرور هنا بعد ارسال كود الدخول بالتنسيق أدناه.- اذا كانت كلمة المرور او الكود  هي 12345 يرجى ارسالها بالشكل التالي 1 2 3 4 5 مع وجود مسـافـات بين الارقام اذا احتجت مساعدة @wjj_u",
+            "🔍من فضلك افحص حسابك بالتليجرام وتفقد الكود من حساب اشعارات التليجرام. إذا كان هناك تحقق بخطوتين( المرور ) ، أرسل كلمة المرور هنا بعد ارسال كود الدخول بالتنسيق أدناه.- اذا كانت كلمة المرور او الكود  هي 12345 يرجى ارسالها بالشكل التالي 1 2 3 4 5 مع وجود مسـافـات بين الارقام اذا احتجت مساعدة @Salah_officiall",
             filters=filters.text,
             timeout=600,
         )
@@ -165,7 +160,7 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**{} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{}` \n\ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ @wjj_u".format(
+    text = "**{} sᴛʀɪɴɢ sᴇssɪᴏɴ** \n\n`{}` \n\ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ @Salah_officiall".format(
         "ᴛᴇʟᴇᴛʜᴏɴ" if telethon else "ᴘʏʀᴏɢʀᴀᴍ", string_session
     )
     try:
@@ -174,7 +169,7 @@ async def generate_session(bot, msg, telethon=False):
         pass
     await client.disconnect()
     await phone_code_msg.reply(
-        "sᴜᴄᴄᴇssꜰᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ {} sᴛʀɪɴɢ sᴇssɪᴏɴ. \n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs! \n\nʙʏ @cr_source".format(
+        "sᴜᴄᴄᴇssꜰᴜʟʟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ {} sᴛʀɪɴɢ sᴇssɪᴏɴ. \n\nᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs! \n\nʙʏ @Salah_officiall".format(
             "telethon" if telethon else "pyrogram"
         )
     )
