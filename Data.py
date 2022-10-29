@@ -3,12 +3,12 @@ from pyrogram.types import InlineKeyboardButton
 
 class Data:
     generate_single_button = [
-        InlineKeyboardButton("🔥 اضغط لبدا استخراج الكود 🔥", callback_data="generate")
+        InlineKeyboardButton(" اضغط لبدا استخراج الكود", callback_data="generate")
     ]
 
     home_buttons = [
         generate_single_button,
-        [InlineKeyboardButton(text="🏠 رجوع", callback_data="home")],
+        [InlineKeyboardButton(text="رجوع", callback_data="home")],
     ]
 
     generate_button = [generate_single_button]
@@ -17,18 +17,18 @@ class Data:
         generate_single_button,
         [
             InlineKeyboardButton(
-                "✨ ᦔꫀꪜ ρꪮ𝘬ꫀꪑꪮꪀ ✨", url="https://t.me/wjj_u"
+                "𝐒𝐎𝐔𝐑𝐂𝐄 𝐉𝐀𝐕𝐀", url="https://t.me/JAVA_tlethon"
             )
         ],
         [
-            InlineKeyboardButton("🤔 طريقة الاستخدام 🤔", callback_data="help"),
-            InlineKeyboardButton("🎪 معلومات 🎪", callback_data="about"),
+            InlineKeyboardButton("طريقة الاستخدام", callback_data="help"),
+            InlineKeyboardButton("معلومات", callback_data="about"),
         ],
-        [InlineKeyboardButton("💌 قناة السورس 💌", url="https://t.me/cr_source")],
+        [InlineKeyboardButton("مبرمج البوت", url="https://t.me/Salah_officiall")],
     ]
 
     START = """
-هلو {}
+اهلا {}
 اهلا بك في {}
 ⚡¦يـمكنك استـخـراج الـتـالـي
 ♻️¦تيرمـكـس تليثون للحسـابـات🏂
@@ -37,7 +37,7 @@ class Data:
 🗽¦بايـروجـرام مـيوزك احدث اصدار🎊
 🎧¦بايـروجـرام مـيوزك للبوتات🤖
 - يعمـل هـذا البـوت لمساعدتـك بطريقـة سهلـه للحصـول على كـود تيرمكـس لتشغيل تلـيثون والبايروجرام لتشغيل سـورس اغــاني تم انشـاء هـذا البـوت
-ʙʏ @cr_source ᴀɴᴅ @gro_up_1 
+ʙʏ @JAVA_tlethon
     """
 
     HELP = """
@@ -56,12 +56,12 @@ class Data:
     ABOUT = """
 **ᴀʙᴏᴜᴛ ᴛʜɪs ʙᴏᴛ** 
 
-ᴀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ ᴀɴᴅ ᴛᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴ ʙʏ @cr_source 
+ᴀ ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏ ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ ᴀɴᴅ ᴛᴇʟᴇᴛʜᴏɴ sᴛʀɪɴɢ sᴇssɪᴏɴ ʙʏ @JAVA_tlethon 
 
-السورس : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/cr_source)
+السورس : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/JAVA_tlethon)
 المكاتب : [ᴘʏʀᴏɢʀᴀᴍ](docs.pyrogram.org)
 اللغه : [ᴘʏᴛʜᴏɴ](www.python.org)
-المالك : @wjj_u 
+المالك : @Salah_officiall 
     """
 
     # Repo Message
@@ -72,13 +72,11 @@ class Data:
 ━━━━━━━━━━━━━━━━━
 ɢᴇɴᴇʀᴀᴛᴇ sᴛʀɪɴɢ sᴇssɪᴏɴ ғᴏʀ ᴛɢ...
 ┏━━━━━━━━━━━━━━━━━┓
-┣★ المطور [pokemon](https://t.me/wjj_u)
-┣★ للعظمة  [ʜᴇᴀʀᴛ ❤️](https://t.me/cr_source)
-┣★ بار التيم [رغي](https://t.me/gro_up_1)
-┣★ المطورة [Cristen](https://t.me/dr_criss)
-┣★ السورس : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/cr_source)
-┣★ بار السورس [c.r team](https://t.me/SORS0Coo)
+┣★ المطور [pokemon](https://t.me/Salah_officiall)
+┣★ للعظمة  [ʜᴇᴀʀᴛ ❤️](https://t.me/JAVA_tlethon)
+┣★ بار التيم [مساعده](https://t.me/Supports)
+┣★ المطور [Cristen](https://t.me/Hk_MB)
 ┗━━━━━━━━━━━━━━━━━┛
 💞 
-لو عند اساله تعاله بف » TO » MY » [OWNER] @wjj_u 
+لو عند اساله تعاله بف » TO » MY » [OWNER] @Salah_officiall 
    """
