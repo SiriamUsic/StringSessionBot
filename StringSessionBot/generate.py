@@ -65,7 +65,7 @@ async def generate_session(bot, msg, telethon=False):
     api_hash = api_hash_msg.text
     phone_number_msg = await bot.ask(
         user_id,
-        "✔️الان ارسل رقمك مع رمز دولتك , مثال :+201016805193`",
+        "✔️الان ارسل رقمك مع رمز دولتك \nمثال :+201016805193`",
         filters=filters.text,
     )
     if await cancelled(api_id_msg):
